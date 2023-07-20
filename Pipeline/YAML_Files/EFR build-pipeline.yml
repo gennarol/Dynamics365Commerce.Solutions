@@ -11,12 +11,6 @@ variables:
     value: 'src\FiscalIntegration\EFRSample'
 
 steps:
-  - task: PowerShell@2
-    displayName: 'Pre-Build steps'
-    inputs:
-      targetType: filePath
-      filePath: ./Pipeline/PowershellScripts/Pre-Build.ps1
-      failOnStderr: true
 
   - task: NuGetToolInstaller@1
     displayName: 'Use NuGet 5.4.0'
